@@ -6,4 +6,4 @@ build:
   dockerfile: dockerfile
     
 run:
-  cmd: cd Deepspeech && sh bin/run-ldc93s1.sh
+  cmd: cd DeepSpeech && sh bin/run-ldc93s1.sh
