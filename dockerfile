@@ -22,7 +22,7 @@ RUN wget https://bootstrap.pypa.io/get-pip.py && \
     python3 get-pip.py && \
     pip3 install --upgrade pip
 
-RUN pip3 install --no-cache-dir -r pandas \
+RUN pip3 install pandas \
         progressbar2 \
         python-utils \
         tensorflow \
