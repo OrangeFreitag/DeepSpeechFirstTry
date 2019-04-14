@@ -2,8 +2,6 @@ FROM tensorflow/tensorflow:1.13.1
 
 LABEL maintainer="freimoser.c@gmail.com"
 
-COPY requirements.txt requirements.txt
-
 RUN apt-get update && apt-get install -y \
     software-properties-common \
     curl
@@ -24,7 +22,25 @@ RUN wget https://bootstrap.pypa.io/get-pip.py && \
     python3 get-pip.py && \
     pip3 install --upgrade pip
 
-RUN pip3 install --no-cache-dir -r requirements.txt
+RUN pip3 install --no-cache-dir -r pandas \
+        progressbar2 \
+        python-utils \
+        tensorflow \
+        numpy \
+        matplotlib \
+        scipy \
+        sox \
+        paramiko \
+        python_speech_features \
+        pyxdg \
+        bs4 \
+        six \
+        requests \
+        tables \
+        attrdict \
+        setuptools \
+        librosa \
+        soundfile
 
 RUN virtualenv -p python3 /tmp/deepspeech-venv/ 
 
