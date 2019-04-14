@@ -13,4 +13,4 @@ build:
   dockerfile: dockerfile
     
 run:
-  cmd: cd DeepSpeech && sh bin/run-ldc93s1.sh
+  cmd: python model.py
