@@ -1,4 +1,4 @@
-FROM tensorflow/tensorflow:1.13.1
+FROM tensorflow/tensorflow:1.13.0rc0-gpu-py3 
 
 LABEL maintainer="freimoser.c@gmail.com"
 
