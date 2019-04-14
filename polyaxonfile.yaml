@@ -1,0 +1,9 @@
+version: 1
+
+kind: experiment
+
+build:
+  dockerfile: dockerfile
+    
+run:
+  cmd: sh /DeepSpeech/bin/run-ldc93s1.sh
