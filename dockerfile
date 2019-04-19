@@ -42,7 +42,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
         bash-completion \
         g++ \
         unzip \
-        git-lfs \
+        git-lfs 
 
 # Install NCCL 2.2
 RUN apt-get install -qq -y --allow-downgrades --allow-change-held-packages libnccl2=2.3.7-1+cuda10.0 libnccl-dev=2.3.7-1+cuda10.0
