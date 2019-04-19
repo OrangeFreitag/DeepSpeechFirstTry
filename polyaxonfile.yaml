@@ -13,4 +13,4 @@ build:
   dockerfile: dockerfile
     
 run:
-  cmd: python model.py
+  cmd:  sh ./bin/run-ldc93s1.sh
