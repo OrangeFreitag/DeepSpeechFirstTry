@@ -221,5 +221,6 @@ RUN rm -rf kenlm \
     && cmake .. \
     && make -j 4
 
+RUN pip install polyaxon-client
 # Done
 WORKDIR /DeepSpeech
