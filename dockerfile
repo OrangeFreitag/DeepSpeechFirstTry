@@ -139,12 +139,16 @@ ENV LD_LIBRARY_PATH $LD_LIBRARY_PATH:/usr/local/cuda/extras/CUPTI/lib64:/usr/loc
 # << END Configure Bazel
 
 
-
+WORKDIR /
 
 # Copy DeepSpeech repo contents to container's /DeepSpeech
 RUN git clone https://github.com/mozilla/DeepSpeech
 
 WORKDIR /DeepSpeech
+
+RUN pwd
+
+RUN ls
 
 RUN pip --no-cache-dir install -r requirements.txt
 
